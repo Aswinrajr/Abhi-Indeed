@@ -1,0 +1,145 @@
+.admin-company-panel {
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    background-color: #f4f4f9;
+    height: 100vh;
+    margin-left: 150px; /* Adjusted to match the width of the side navigation */
+    overflow: hidden; /* Ensures no overflow within the admin panel */
+}
+
+.admin-company-content-wrapper {
+    flex-grow: 1;
+    max-width: calc(100% - 250px); /* Adjusted to fit within the viewport */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: auto; /* Allows internal scrolling if necessary */
+}
+
+.admin-company-header {
+    background-color: #343a40;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.admin-company-header h1 {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-company-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    font-size: 14px;
+}
+
+.table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table th {
+    font-weight: 700;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.btn {
+    font-weight: 400;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.admin-side-navigation {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    overflow: hidden; 
+    background-color: #343a40;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.admin-side-navigation a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+
+.admin-side-navigation a:hover {
+    background-color: #575757;
+}
+
+.admin-navigation {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.admin-navigation a {
+    margin-left: 20px;
+    color: #343a40;
+    text-decoration: none;
+}
+
+.admin-navigation a:hover {
+    color: #007bff;
+}
+
+.admin-company-pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.admin-company-pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.admin-company-pagination li {
+    margin: 0 5px;
+}
+
+.admin-company-pagination li a {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.admin-company-pagination li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.admin-company-pagination li.active a {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}

@@ -1,0 +1,141 @@
+.workexperience-container {
+  padding: 20px;
+}
+
+.workexperience-section {
+  margin-top: 20px;
+}
+
+.workexperience-card {
+  background-color: #e3f2fd; /* Light blue background */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.workexperience-card:hover {
+  transform: translateY(-5px);
+}
+
+.workexperience-details h5.job-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #0d47a1; /* Highlight the job title */
+  margin-bottom: 5px;
+}
+
+.workexperience-details .company-name {
+  font-weight: 600;
+  color: #1976d2; /* Professional company name styling */
+  margin-bottom: 5px;
+}
+
+.workexperience-details p {
+  margin-bottom: 5px;
+  color: #424242; /* Professional text color */
+}
+
+.workexperience-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.workexperience-item .icon {
+  color: #6c757d;
+}
+
+.workexperience-item span {
+  font-weight: bold;
+  color: #424242;
+}
+
+.workexperience-item:hover {
+  background-color: #e3f2fd;
+  cursor: pointer;
+}
+
+.workexperience-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.edit-icon {
+  color: #007bff;
+}
+
+.delete-icon {
+  color: #dc3545;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  opacity: 0.7;
+}
+
+.no-experience-message {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Styles for the add experience button */
+.add-experience-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-experience-button:hover {
+  background-color: #e9ecef;
+}
+
+.add-experience-button span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .workexperience-card {
+    padding: 15px;
+  }
+
+  .workexperience-details h5.job-title {
+    font-size: 1.1rem;
+  }
+
+  .workexperience-actions {
+    top: 5px;
+    right: 5px;
+  }
+
+  .edit-icon,
+  .delete-icon {
+    font-size: 14px;
+  }
+}

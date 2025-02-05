@@ -1,0 +1,79 @@
+.company-view-container {
+  padding: 30px;
+  background-color: #f8f9fa;
+}
+
+.company-view-logo {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.company-view-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.company-view-type {
+  font-size: 1.3rem;
+  color: #666;
+}
+
+.company-view-card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+}
+
+.company-view-card .card-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.company-view-snapshot .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.company-view-snapshot h5 {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.company-view-snapshot p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card-body p {
+  font-size: 1.1rem;
+}
+
+.company-view-container .text-right {
+  display: flex;
+  align-items: center;
+  width: 280px;
+}
+
+.company-view-container .text-center {
+  display: flex;
+  margin-left: 200px;
+  align-items: center;
+  justify-content: center;
+}

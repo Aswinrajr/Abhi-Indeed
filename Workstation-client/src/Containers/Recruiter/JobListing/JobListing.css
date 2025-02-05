@@ -1,0 +1,232 @@
+.recruiter-job-listing {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.recruiter-job-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.recruiter-card-body {
+    padding: 20px;
+}
+
+.recruiter-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.recruiter-company-name {
+    color: #4285f4;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.recruiter-job-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.recruiter-job-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.recruiter-detail-item {
+    margin-right: 15px;
+}
+
+.recruiter-job-description {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.recruiter-view-job-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.recruiter-view-job-button:hover {
+    background-color: #3367d6;
+}
+
+.recruiter-action-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.recruiter-edit-icon,
+.recruiter-delete-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #007bff; 
+}
+
+.recruiter-edit-icon:hover,
+.recruiter-delete-icon:hover {
+    color: #0056b3; 
+}
+.recruiter-no-jobs {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.recruiter-no-jobs h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.recruiter-no-jobs p {
+    font-size: 16px;
+    color: #666;
+}
+
+.recruiter-post-job-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.recruiter-post-job-button:hover {
+    background-color: #0056b3;
+}
+
+
+.recruiter-status-indicator {
+    margin-left:35px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.recruiter-status-indicator::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    animation: blink 1s infinite;
+}
+
+/* Red blinking light for blocked status */
+.recruiter-status-indicator.blocked::before {
+    background-color: red;
+}
+
+/* Green blinking light for active status */
+.recruiter-status-indicator.active::before {
+    background-color: green;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Search container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px; /* Add gap between input and buttons */
+}
+
+.search-container input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 620px;
+    font-size: 1rem;
+}
+
+.search-container button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4285f4;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.search-container button:hover {
+    background-color: #3367d6;
+}
+
+.joblisting-clear {
+    background-color: #f44336; 
+}
+
+.clear-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Pagination controls */
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Spacing between buttons */
+    margin-top: 20px;
+    position:sticky;
+}
+
+.pagination-controls button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.pagination-controls button:hover {
+    background-color: #ccc;
+}
+
+.pagination-controls .active {
+    background-color: #4285f4;
+    color: white;
+}
+
+.pagination-controls button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+
+

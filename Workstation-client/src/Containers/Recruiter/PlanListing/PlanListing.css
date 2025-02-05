@@ -1,0 +1,97 @@
+/* PlanListing.css */
+
+.planslisting-container {
+    padding: 40px 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    min-height: 100vh; /* Ensure full height of the page */
+  }
+  
+  .planslisting-title {
+    font-size: 3rem; /* Increase font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .planslisting-subtitle {
+    font-size: 1.4rem; /* Increase font size */
+    color: #333; /* Make subtitle bold */
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .planslisting-grid {
+    display: flex;
+    justify-content: center; /* Center the grid */
+    gap: 30px; /* Space between the cards */
+  }
+  
+  .planslisting-card {
+    background-color: #fff;
+    border: 2px solid #ddd; /* Make border thicker */
+    border-radius: 15px; /* Increase border-radius for smoother corners */
+    padding: 40px 25px; /* Increase padding */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Increase box-shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 500px; /* Increase the height of the cards */
+    width: 300px; /* Set a fixed width for consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .planslisting-card:hover {
+    transform: translateY(-12px); /* Increase hover effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  .planslisting-name {
+    font-size: 2rem; /* Increase font size */
+    font-weight: 800; /* Make it bolder */
+    color: #007bff; /* Blue color for the plan name */
+    margin-bottom: 20px;
+    border-bottom: 3px solid #007bff; /* Add border to the plan name */
+    padding-bottom: 10px; /* Add padding for spacing */
+  }
+  
+  .planslisting-amount {
+    font-size: 2.5rem; /* Increase font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  .planslisting-per-month {
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    color: #555;
+  }
+  
+  .planslisting-description,
+  .planslisting-planType {
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: bold; /* Make description and planType bold */
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .planslisting-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Increase padding for button */
+    border-radius: 10px; /* Make button more rounded */
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: bold; /* Make button text bold */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .planslisting-button:hover {
+    background-color: #0056b3;
+  }
+  

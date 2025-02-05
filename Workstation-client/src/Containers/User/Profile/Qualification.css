@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap');
+
+.qualification-container {
+  background-color: white;
+  padding: 20px;
+}
+
+.qualification-item {
+  transition: all 0.3s ease;
+}
+
+.qualification-item:hover {
+  background-color: #f8f9fa;
+}
+
+.qualification-item span {
+  color: #666060;
+  font-weight: 600;
+  font-size: large;
+  font-family: 'Mulish', sans-serif;
+}
+
+.qualification-divider {
+  border-top: 1px solid #dee2e6;
+}
+
+.education-section {
+  margin-top: 20px;
+}
+
+.education-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.education-card {
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.education-details {
+  margin-top: 10px;
+}
+  

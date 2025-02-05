@@ -1,0 +1,58 @@
+name: Deploy Node Application
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+
+      - name: Login to Docker Hub
+        run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+
+      - name: Build Docker Image
+        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/server-app:latest .
+
+      - name: Publish Image to Docker Hub
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/server-app:latest
+
+  deploy:
+    needs: build
+    runs-on: self-hosted
+
+    steps:
+      - name: Cleanup old images
+        run: |
+          docker image prune -f
+          docker rmi $(docker images -f "dangling=true" -q) || true
+
+      - name: Pull image from Docker Hub
+        run: docker pull ${{ secrets.DOCKERHUB_USERNAME }}/server-app:latest
+
+      - name: Delete old container
+        run: docker rm -f server-app || true
+
+      - name: Run Docker Container
+        run: |
+          docker run -d -p 3000:3000 --name server-app \
+            -e PORT="${{ secrets.PORT }}" \
+            -e MONGODB_URL="${{ secrets.MONGODB_URL }}" \
+            -e EMAIL="${{ secrets.EMAIL }}" \
+            -e PASSWORD="${{ secrets.PASSWORD }}" \
+            -e CLIENT_ID="${{ secrets.CLIENT_ID }}" \
+            -e CLIENT_SECRET="${{ secrets.CLIENT_SECRET }}" \
+            -e KEY="${{ secrets.KEY }}" \
+            -e REFRESH_TOKEN_KEY="${{ secrets.REFRESH_TOKEN_KEY }}" \
+            -e AWS_ACCESS_KEY_ID="${{ secrets.AWS_ACCESS_KEY_ID }}" \
+            -e AWS_SECRET_ACCESS_KEY="${{ secrets.AWS_SECRET_ACCESS_KEY }}" \
+            -e S3_BUCKET_NAME="${{ secrets.S3_BUCKET_NAME }}" \
+            -e AWS_REGION="${{ secrets.AWS_REGION }}" \
+            -e RAZORPAY_KEY_ID="${{ secrets.RAZORPAY_KEY_ID }}" \
+            -e RAZORPAY_KEYSECRET="${{ secrets.RAZORPAY_KEYSECRET }}" \
+            ${{ secrets.DOCKERHUB_USERNAME }}/server-app:latest

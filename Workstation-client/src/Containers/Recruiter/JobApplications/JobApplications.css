@@ -1,0 +1,66 @@
+.job-applications-table {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.job-applications-table th {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.job-applications-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 8px;
+}
+
+.job-applications-table td .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.job-applications-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.job-applications-table tr:hover {
+    background-color: #e9ecef;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+
+.back-button {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.header-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}

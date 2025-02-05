@@ -1,0 +1,16 @@
+.page-not-found {
+    background-image: url('../Assets/notfound.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .page-not-found .container {
+    text-align: center;
+  }
+  

@@ -1,0 +1,102 @@
+.admin-home-dashboard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-home-stats-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  justify-content: center;
+}
+
+.admin-home-card {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific colors for each card */
+.admin-home-card:nth-child(1) {
+  background-color: #d1e7dd;
+  cursor: pointer;
+}
+
+.admin-home-card:nth-child(2) {
+  background-color: #cff4fc;
+  cursor: pointer;
+}
+
+.admin-home-card:nth-child(3) {
+  background-color: #ffecb5;
+  cursor: pointer;
+}
+
+.admin-home-charts {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.admin-home-chart-container,
+.admin-home-orders-chart {
+  max-width: 600px;
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+}
+
+.admin-home-pie-chart-container {
+  max-width: 650px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+}
+
+.order-filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.order-filter-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.order-filter-buttons button.active {
+  background-color: #0056b3;
+}
+
+.admin-home-loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.admin-home-error-message {
+  text-align: center;
+  color: #dc3545;
+  font-weight: 600;
+  margin-top: 2rem;
+}

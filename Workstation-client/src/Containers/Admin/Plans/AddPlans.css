@@ -1,0 +1,44 @@
+.add-plans-main-content {
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    background-color: #f4f4f9;
+    height: 100vh;
+    margin-left: 150px;
+    overflow: hidden;
+}
+
+.add-plans-container {
+    flex-grow: 1;
+    max-width: calc(100% - 250px);
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.add-plans-container h2 {
+    font-weight: 700;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-plans-container .form-control {
+    font-size: 14px;
+}
+
+.add-plans-container .btn {
+    font-weight: 600;
+    font-size: 14px;
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.add-plans-container .form-group {
+    margin-bottom: 15px;
+}

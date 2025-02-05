@@ -1,0 +1,70 @@
+/* CompanySideNavigation.css */
+
+/* Container for the side navigation */
+.company-side-nav {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    font-family: 'sans-serif';
+    height: 100vh; /* Full height of the viewport */
+    position: fixed; /* Fixed positioning to avoid scrolling */
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px; /* Optional: add some padding at the bottom */
+  }
+  
+  /* Individual items in the side navigation */
+  .company-side-nav-item {
+    padding: 15px;
+  }
+  
+  /* Links within the navigation items */
+  .company-side-nav-item a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Hover effect for navigation links */
+  .company-side-nav-item a:hover {
+    background-color: #495057;
+    border-radius: 5px;
+  }
+  
+  /* Icons within the navigation items */
+  .company-side-nav-item svg {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  /* Content area next to the side navigation */
+  .company-dashboard-content {
+    margin-left: 250px; /* Adjust according to the width of the side nav */
+    padding: 20px;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .company-side-nav {
+      width: 200px; /* Adjust width for smaller screens */
+    }
+  
+    .company-dashboard-content {
+      margin-left: 200px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .company-side-nav {
+      display: none; /* Hide side nav on very small screens */
+    }
+  
+    .company-dashboard-content {
+      margin-left: 0;
+    }
+  }
+  

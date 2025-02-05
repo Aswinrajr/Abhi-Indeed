@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap');
+
+.companylogin-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-width: 100%;
+  background: url("../../../assets/company.jpg") no-repeat center center;
+  background-size: cover; 
+  font-family: 'Mulish', sans-serif;    
+  backdrop-filter: blur(7px);
+}
+
+.company-banner {
+  position: relative; 
+  border-radius: 10px 0 0 10px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.company-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(64, 64, 64, 0.9); 
+  border-radius: 10px 0 0 10px;
+  z-index: 1;
+}
+
+.company-banner > * {
+  position: relative;
+  z-index: 2;
+}
+
+.company-banner img {
+  margin-bottom: 20px;
+  max-width: 100%; 
+}
+
+.company-form {
+  background: #fff;
+  border-radius: 0 10px 10px 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1; 
+}
+
+.company-form h2 {
+  margin-bottom: 20px;
+}
+
+.company-form img {
+  height: 70px;
+  width: 70px; 
+}
+
+.company-form form {
+  width: 100%;
+}
+
+.company-form input {
+  margin-bottom: 10px;
+}
+
+.company-form button {
+  width: 100%;
+}
+
+.invalid-feedback {
+  display: block; 
+  color: red;
+}
+
+.alert {
+  width: 100%;
+  text-align: center;
+}

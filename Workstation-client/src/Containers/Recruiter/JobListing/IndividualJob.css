@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Mullish:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Mullish', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.individual-job-details-page {
+    padding: 2rem 0;
+}
+
+.individual-job-back-container {
+    margin-bottom: 1rem;
+}
+
+.individual-job-back-symbol {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0056b3;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.individual-job-back-symbol:hover {
+    color: #003d82;
+}
+
+.individual-job-card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.individual-job-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.individual-job-company-info {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.individual-job-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: #666;
+}
+
+.individual-job-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.individual-job-meta svg {
+    margin-right: 0.5rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card-body h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.individual-job-summary {
+    position: sticky;
+    top: 2rem;
+}
+
+.individual-job-summary-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.individual-job-summary-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    color: #555;
+}
+
+.individual-job-summary-list svg {
+    margin-right: 0.75rem;
+    color: #0056b3;
+}
+
+.badge {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.individual-job-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: #0056b3;
+}
+
+.individual-job-status-indicator {
+    margin-left: 28px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.individual-job-status-indicator::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    animation: blink 1s infinite;
+}
+
+/* Red blinking light for blocked status */
+.individual-job-status-indicator.blocked::before {
+    background-color: red;
+}
+
+/* Green blinking light for active status */
+.individual-job-status-indicator.active::before {
+    background-color: green;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Style for reason text inside brackets */
+.individual-job-reason {
+    font-size: 0.85rem;
+    font-weight: normal;
+    color: #d9534f;
+    margin-top: 15px;
+    margin-left: 10px;
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+.application-success-card {
+    max-width: 400px; /* Narrower card width */
+    padding: 1.5rem;  /* Reduced padding */
+    border: none;
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    font-family: 'Mulish', sans-serif;
+    background: #ffffff;
+}
+
+.success-icon {
+    font-size: 3rem; /* Slightly smaller icon */
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+.application-success-card .card-title {
+    font-weight: 700;
+    color: #343a40;
+}
+
+.application-success-card .card-text {
+    color: #6c757d;
+}
+
+.rating-section {
+    margin-top: 1rem;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.star-button.on .star {
+    color: #ffc107;
+}
+
+.star-button.off .star {
+    color: #ccc;
+}
+
+.star {
+    font-size: 20px; /* Slightly smaller stars */
+    margin: 0 2px;
+}
+
+.form-control {
+    font-family: 'Mulish', sans-serif;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    padding: 0.5rem;
+}
+
+.submit-review-button, .go-home-button {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 1rem; /* Added top margin for spacing */
+    padding: 0.5rem 1rem;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.submit-review-button {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.submit-review-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.go-home-button {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.go-home-button:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    transform: translateY(-2px);
+}

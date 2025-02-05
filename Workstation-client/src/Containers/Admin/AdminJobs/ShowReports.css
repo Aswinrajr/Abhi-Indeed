@@ -1,0 +1,99 @@
+/* Container for the component */
+.admin-show-reports-container {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #f5f7fa;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.admin-show-reports-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+/* Card styling */
+.admin-show-reports-card {
+    border: none;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.admin-show-reports-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Header */
+.admin-show-reports-card-header {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+}
+
+/* Card Body */
+.admin-show-reports-card-body {
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.admin-show-reports-reporter, 
+.admin-show-reports-reason, 
+.admin-show-reports-description {
+    margin-bottom: 1rem;
+}
+
+/* No reports found message */
+.admin-show-reports-no-reports {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff6b6b;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+/* Spinner styling */
+.admin-show-reports-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.admin-show-reports-error {
+    text-align: center;
+    color: #ff4d4f;
+    font-weight: 600;
+}
+
+/* Back button */
+.admin-show-reports-back-button {
+    display: block;
+    margin: 2.5rem auto;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    width: 180px;
+    height: 40px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.admin-show-reports-back-button:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}

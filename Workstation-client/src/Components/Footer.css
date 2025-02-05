@@ -1,0 +1,43 @@
+.footer {
+    background-color: #f0f0f0;  /* Light ash color */
+    color: #333333;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .footer-heading {
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .footer-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .copyright {
+    background-color: #e6e6e6;  /* Slightly darker ash for copyright */
+    color: #4d4d4d;
+    font-size: 0.9rem;
+  }
+  
+  .footer-list li:hover,
+  .footer a:hover {
+    color: #0056b3;  /* You can adjust this to match your primary color */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  @media (max-width: 767px) {
+    .footer-heading {
+      margin-top: 1rem;
+    }
+  }

@@ -1,0 +1,242 @@
+.employee-application-listing-container {
+  font-family: 'Mulish', sans-serif;
+  margin-top: 20px;
+  padding-top: 70px; 
+  padding-bottom: 50px;
+}
+
+.employee-application-listing-container .search-wrapper {
+  position: fixed;
+  top: 60px; 
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.employee-application-listing-container .input-group {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.employee-application-listing-container .input-group-text {
+  background-color: #f8f9fa;
+  border-right: none;
+}
+
+.employee-application-listing-container .form-control {
+  border-left: none;
+  border-right: none;
+}
+
+.employee-application-listing-container .form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+/* Card styling */
+.employee-application-item {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Details section styling */
+.employee-application-details {
+  padding: 20px;
+}
+
+.employee-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.employee-job-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #343a40;
+  margin: 0;
+}
+
+.employee-company-name {
+  font-size: 14px;
+  color: #343a40;
+  margin-bottom: 5px;
+}
+
+.employee-location {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 5px;
+}
+
+.employee-applied-on {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 5px;
+}
+
+/* Status section styling */
+.employee-job-listingstatus {
+  display: flex;
+  flex-direction: column;
+}
+
+.status-listingheading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a2a49;
+  margin-bottom: 5px;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.status-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Status Animations */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes pulseGreen {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.status-text-applied {
+  color: #007bff;
+}
+
+.status-icon-applied {
+  color: #007bff;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+.status-text-rejected {
+  color: #dc3545;
+}
+
+.status-icon-rejected {
+  color: #dc3545;
+  animation: blink 1s infinite;
+}
+
+.status-text-interviewing {
+  color: #ffc107;
+}
+
+.status-icon-interviewing {
+  color: #ffc107;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.status-text-hired {
+  color: #28a745;
+}
+
+.status-icon-hired {
+  color: #28a745;
+  animation: pulseGreen 1s infinite ease-in-out;
+}
+
+/* Write Review button styling */
+.write-review-button {
+  font-family: 'Mulish', sans-serif;
+  color: #ffffff;
+  background-color: #28a745;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-left: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.write-review-button:hover {
+  background-color: #218838;
+  color: #ffffff;
+}
+
+/* Review Modal */
+.modal-body {
+  padding: 20px;
+}
+
+.star-rating {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.star-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.star-button .star {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.star-button.on .star {
+  color: #ffd700;
+}
+
+/* Message employer button */
+.employee-message-employer {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  width: 100px;
+  transition: background-color 0.3s ease;
+}
+
+.employee-message-employer:hover {
+  background-color: #0056b3;
+}
+
+.employee-arrow-symbol {
+  margin-left: 5px;
+}
+
+/* No applications message */
+.employee-no-applications-message {
+  text-align: center;
+  font-size: 18px;
+  color: #6c757d;
+  margin-top: 50px;
+}

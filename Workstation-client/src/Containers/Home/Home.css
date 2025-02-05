@@ -1,0 +1,332 @@
+/* General Styles */
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: #f3f2f1;
+  color: #333;
+  line-height: 1.6;
+}
+
+.home-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+/* Back Arrow */
+.home-back-arrow {
+  font-size: 24px;  
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Search Form */
+.home-search-form {
+  background-color: #fff;
+  padding: 20px;
+  width: 850px;
+  border-radius: 8px;
+  box-shadow: 0 8px 3px rgba(10, 9, 9, 0.12);
+  margin: 20px auto;
+}
+
+.home-search-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-search-col,
+.home-category-col
+ {
+  margin-bottom: 1rem;
+}
+
+
+.home-search-col {
+  padding-left: 100px;
+}
+
+
+.home-search-input {
+  border: 1px solid #dce0e0;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.home-search-input:focus {
+  border-color: #0a66c2;
+  box-shadow: 0 0 0 0.2rem rgba(10, 102, 194, 0.25);
+}
+
+.home-category-dropdown {
+  border: 1px solid #dce0e0;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path d="M1.5 5a.5.5 0 0 1 .707-.707L8 10.293l5.793-5.793A.5.5 0 0 1 15.5 5h-14z"/></svg>') no-repeat right 10px center;
+  background-size: 16px 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.home-find-jobs-button {
+  background-color: #0a66c2;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 30px;
+  transition: background-color 0.3s ease;
+  width:100px;
+}
+
+/* New Location and Price Range Inputs */
+.home-location-price-row {
+  margin-top: 1rem;
+}
+
+.home-location-col,
+.home-price-range-col {
+  margin-bottom: 1rem;
+}
+
+.home-location-dropdown,
+.home-price-range-dropdown {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #dce0e0;
+  border-radius: 4px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path d="M1.5 5a.5.5 0 0 1 .707-.707L8 10.293l5.793-5.793A.5.5 0 0 1 15.5 5h-14z"/></svg>') no-repeat right 10px center;
+  background-size: 16px 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.home-location-col {
+  display: flex;
+  align-items: center;
+}
+
+.home-price-range-col {
+  display: flex;
+  align-items: center;
+}
+
+/* Job List and Details */
+.home-jobs-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-col-md-6 {
+  flex: 1;
+  padding: 20px;
+}
+
+.home-job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Increasing the gap between job cards */
+}
+
+
+
+.home-job-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px 25px;
+  box-shadow: 0 8px 3px rgba(10, 9, 9, 0.12);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.home-job-card-active {
+  background-color: transparent; 
+  color: black; 
+  border: 2px solid #0a66c2; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.home-job-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.home-job-card-header {
+  margin-bottom: 5px;
+}
+
+.home-job-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.home-company-name {
+  color: #0073b1;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.home-job-location, 
+.home-job-posted {
+  color: rgb(53, 50, 50);
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.home-easy-apply {
+  margin-top: 10px;
+}
+
+.home-easy-apply-tag {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0a66c2;
+}
+
+/* Job Details Section */
+.home-job-details-container {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 3px rgba(10, 9, 9, 0.12);
+}
+
+.home-job-title-highlight {
+  font-size: 28px; 
+  font-weight: bold;
+  color: #333;
+}
+
+.home-company-name-highlight {
+  color: #0073b1;
+  font-size: 18px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.home-action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.home-job-info {
+  margin-top: 20px;
+  color: rgb(94, 92, 92);
+}
+
+.home-job-field {
+  margin-bottom: 15px;
+}
+
+.home-job-field h4 {
+  font-size: 16px;
+  color: #333;
+}
+
+.home-job-field p {
+  font-size: 14px;
+}
+
+.home-job-field ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.home-job-field li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+
+.home-find-jobs-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-clear-filters-button {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+.home-button:active {
+  background-color: #004085;
+  transform: scale(0.98);
+}
+
+.home-button.disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Icon Styling */
+.home-button-icon {
+  margin-right: 0.5rem; 
+  font-size: 1 rem; 
+  
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  margin-right: 200px; 
+  padding: 10px 0;
+  position: relative; 
+  background-color: #f8f9fa;
+  width: calc(100% - 100px);
+  z-index: 10; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home-row {
+    flex-direction: column;
+  }
+
+  .home-col-md-6 {
+    padding: 10px;
+  }
+
+  .home-search-form {
+    width: 100%;
+  }
+}

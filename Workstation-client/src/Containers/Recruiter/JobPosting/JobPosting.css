@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
+.job-posting-form {
+  font-family: 'Mulish', sans-serif;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-posting-form h2 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.job-posting-form .form-label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.job-posting-form .form-control,
+.job-posting-form .form-select {
+  border-color: #ced4da;
+  border-radius: 4px;
+}
+
+.job-posting-form .form-control:focus,
+.job-posting-form .form-select:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.job-posting-form .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.job-posting-form .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.back-icon {
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.job-posting-form select.form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23343a40' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 12px 12px;
+}
+
+/* Remove spinners from number input fields */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Additional styles for radio buttons */
+.job-posting-form .form-check {
+  margin-bottom: 0.5rem;
+}
+
+.job-posting-form .form-check-input {
+  margin-right: 0.5rem;
+}
+
+.job-posting-form .form-check-label {
+  font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .job-posting-form {
+    padding: 1rem;
+  }
+}

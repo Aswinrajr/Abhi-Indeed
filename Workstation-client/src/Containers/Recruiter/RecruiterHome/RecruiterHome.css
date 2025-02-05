@@ -1,0 +1,97 @@
+.home-component {
+    font-family: 'Mulish', sans-serif;
+    margin-left: 250px;
+}
+
+.home-component .bg-primary {
+    background-color: #003366 !important;
+}
+
+.home-component .highlight {
+    font-weight: bold;
+}
+
+.home-component img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.home-component .btn-warning {
+    background-color: #ffcc00;
+    border: none;
+}
+
+.home-component .btn-warning:hover {
+    background-color: #e6b800;
+}
+
+.home-component .bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.home-component h2 {
+    color: #333;
+}
+
+.home-component h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.home-component p {
+    font-size: 14px;
+    color: #666;
+}
+
+.home-component .text-center {
+    text-align: center !important;
+}
+
+.home-component .bg-white {
+    background-color: #ffffff !important;
+}
+
+.matched-candidate-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.matched-candidate-card .candidate-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.matched-candidate-card .location {
+    float: right;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.matched-candidate-card .text-muted {
+    font-size: 0.875rem;
+}
+
+.matched-candidate-card .btn-primary {
+    background-color: #003366;
+    border: none;
+}
+
+.matched-candidate-card .btn-primary:hover {
+    background-color: #002244;
+}
+
+.btn-link {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}

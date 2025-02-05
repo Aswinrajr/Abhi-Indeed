@@ -1,0 +1,41 @@
+.company-home-dashboard {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .company-home-stats-cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .company-home-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .company-home-card:nth-child(1) {
+    background-color: #d1e7dd;
+  }
+  
+  .company-home-card:nth-child(2) {
+    background-color: #ffecb5;
+  }
+  
+  .company-home-chart-container {
+    max-width: 600px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  

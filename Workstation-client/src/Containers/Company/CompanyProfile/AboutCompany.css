@@ -1,0 +1,138 @@
+.about-company-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.company-name {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.info-section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.info-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.info-list li svg {
+    margin-right: 10px;
+    color: #666;
+}
+
+.info-list li span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.mission-statement {
+    font-style: italic;
+    color: #555;
+    position: relative;
+    padding-left: 30px;
+}
+
+.quote-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ddd;
+    font-size: 1.5rem;
+}
+
+.social-section {
+    margin-top: 30px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #666;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #333;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.social-icon svg {
+    margin-right: 10px;
+}
+
+.social-icon span {
+    font-size: 0.9rem;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.edit-section {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.edit-section button {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .about-company-container {
+        padding: 20px;
+    }
+
+    .company-name {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}

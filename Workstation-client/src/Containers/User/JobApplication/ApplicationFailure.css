@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+
+.application-result-card {
+  max-width: 400px;
+  padding: 2rem;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Mulish', sans-serif;
+}
+
+.result-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.success-icon {
+  color: #28a745;
+}
+
+.failure-icon {
+  color: #dc3545;
+}
+
+.application-result-card .card-title {
+  font-weight: 700;
+  color: #343a40;
+  font-family: 'Mulish', sans-serif;
+}
+
+.application-result-card .card-text {
+  color: #6c757d;
+  font-family: 'Mulish', sans-serif;
+}
+
+.action-button {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+}
+
+.try-again-button {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.try-again-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.go-home-button {
+  color: #e5e9ed;
+  border-color: #6c757d;
+}
+
+.go-home-button:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}

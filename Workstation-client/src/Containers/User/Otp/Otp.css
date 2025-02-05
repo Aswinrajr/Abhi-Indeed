@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap');
+
+
+
+.otp-template {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-width: 100%;
+    background: url("../../../assets/otp.jpg") no-repeat center center;
+    background-size: cover; 
+    font-family: 'Mulish', sans-serif;    
+    backdrop-filter: blur(7px);
+  }
+  
+  
+  .otp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    font-family: 'Mulish', sans-serif;    
+    background-size: cover;
+    background: #616161;
+    margin:0;
+  }
+  
+  .otp-card {
+    background-color: #616161;
+    font-family: 'Mulish', sans-serif;    
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .otp-title {
+    font-family: arimo, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .otp-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .otp-inputs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .otp-inputs input {
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .otp-error {
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  .otp-actions {
+    margin-bottom: 20px;
+  }
+  
+  .otp-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    background: linear-gradient(to right, #9bc5c3, #616161);
+    color: white;
+  }
+  
+  .otp-btn-link {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+  }
+  

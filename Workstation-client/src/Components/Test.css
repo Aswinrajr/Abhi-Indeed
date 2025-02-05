@@ -1,0 +1,29 @@
+.side-nav {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    font-family: 'sans-serif';
+    height: 100vh;
+  }
+  
+  .side-nav-item {
+    padding: 15px;
+  }
+  
+  .side-nav-item a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .side-nav-item a:hover {
+    background-color: #495057;
+    border-radius: 5px;
+  }
+  
+  .side-nav-item svg {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  

@@ -1,0 +1,93 @@
+.company-admin-panel {
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    background-color: #f4f4f9;
+    height: 100vh;
+    margin-left: 150px;
+    overflow: hidden;
+}
+
+.company-content-wrapper {
+    flex-grow: 1;
+    max-width: calc(100% - 250px);
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.company-management-header {
+    background-color: #343a40;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.company-management-header h1 {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.company-management-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    font-size: 14px;
+}
+
+.table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table th {
+    font-weight: 700;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.btn {
+    font-weight: 400;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination li a {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pagination li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination li.active a {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}

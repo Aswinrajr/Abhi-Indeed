@@ -1,0 +1,187 @@
+.plans-panel {
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    background-color: #f4f4f9;
+    height: 100vh;
+    margin-left: 150px; /* Adjusted to match the width of the side navigation */
+    overflow: hidden; /* Ensures no overflow within the admin panel */
+}
+
+.plans-content-wrapper {
+    flex-grow: 1;
+    max-width: calc(100% - 250px); /* Adjusted to fit within the viewport */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Allows internal scrolling if necessary */
+}
+
+.plans-management-header {
+    background-color: #343a40;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.plans-management-header h1 {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.plans-management-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    font-size: 14px;
+}
+
+.table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table th {
+    font-weight: 700;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Specific styles for the edit and delete icons */
+.icon-action {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+/* Style for the delete icon */
+.icon-delete {
+    color: #dc3545; /* Red color for delete */
+}
+
+.icon-delete:hover {
+    color: #c82333; /* Darker red on hover */
+}
+
+/* Style for the edit icon */
+.icon-edit {
+    color: #ffc107; /* Yellow color for edit */
+}
+
+.icon-edit:hover {
+    color: #e0a800; /* Darker yellow on hover */
+}
+
+.btn {
+    font-weight: 400;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.plans-add-button {
+    margin-bottom: 10px;
+    margin-left: auto; /* Adjusts the button to be aligned to the right */
+    margin-right: 0;
+    width: 100px;
+}
+
+.plans-pagination-wrapper {
+    display: flex;
+    justify-content: center; /* Center pagination */
+    margin-top: 20px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination li a {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pagination li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination li.active a {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+
+/* Search Input and Button Group Styling */
+/* Search Input and Button Group Styling */
+.plans-input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.plans-input-group .form-control {
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+    max-width: 400px; /* Limits the width of the search input */
+}
+
+.plans-input-group .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.plans-input-group .btn {
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-size: 14px;
+    margin-left: 10px; /* Adds space between buttons and input */
+}
+
+/* Specific Button Styles */
+.plans-input-group .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.plans-input-group .btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.plans-input-group .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.plans-input-group .btn-secondary:hover {
+    background-color: #5a6268;
+    box-shadow: 0 0 5px rgba(108, 117, 125, 0.5);
+}

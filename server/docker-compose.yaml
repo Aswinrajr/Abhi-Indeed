@@ -1,0 +1,21 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - MONGODB_URL=mongodb+srv://abhirajrs1998:abhiraj@cluster0.irvl8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - EMAIL=abhirajrs1998@gmail.com 
+      - PASSWORD=hlhh asfk oumv rvba
+      - CLIENT_ID=405271815357-l8p5ncbh8gkdeuvqlupmli3vn1jacm7h.apps.googleusercontent.com
+      - CLIENT_SECRET=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
+      - KEY=jwttokenkey
+      - REFRESH_TOKEN_KEY=jwtrefreshtokenkey
+      - AWS_ACCESS_KEY_ID= AKIAYS2NVZMMEG2O5LX6
+      - AWS_SECRET_ACCESS_KEY=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
+      - S3_BUCKET_NAME=workstationpdf 
+      - AWS_REGION=us-east-1
+      - RAZORPAY_KEY_ID=rzp_test_Q1L0rbsJ5w1CpD
+      - RAZORPAY_KEYSECRET=UrryaxOCUuPqbGxSc6QAxRpn

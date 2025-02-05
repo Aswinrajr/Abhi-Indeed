@@ -1,0 +1,61 @@
+.otp-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .otp-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #093030;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .otp-sub-title {
+    color: #b5bab8;
+    font-size: 14px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .otp-phone-number {
+    display: block;
+    color: #093030;
+    font-weight: 600;
+  }
+  
+  .otp-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  
+  .otp-field {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #eaf5f6;
+    border: 1px solid #ddd;
+  }
+  
+  .otp-error {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .otp-verify,
+  .otp-resend {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .text-muted {
+    text-align: center;
+  }
+  

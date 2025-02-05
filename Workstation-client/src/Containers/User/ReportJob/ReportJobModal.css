@@ -1,0 +1,60 @@
+.report-job-modal .modal-content {
+    border-radius: 8px;
+  }
+  
+  .report-job-modal .modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .report-job-modal .modal-title {
+    font-weight: bold;
+  }
+  
+  .report-job-modal .close-button {
+    font-size: 1.5rem;
+    color: #6c757d;
+    margin-left: 200px;
+  }
+  
+  .report-job-modal .modal-body h5 {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .report-job-modal .modal-body p {
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+  .report-job-modal .form-check {
+    margin-bottom: 10px;
+  }
+  
+  .report-job-modal .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .report-job-modal .privacy-notice {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .report-job-modal .privacy-notice p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+  
+  .report-job-modal .btn-primary {
+    background-color: #085ff7;
+    border-color: #085ff7;
+    width: 200px;
+    margin-left: 130px;
+  }
+  
+  .report-job-modal .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
